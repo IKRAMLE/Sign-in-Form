@@ -6,49 +6,61 @@
   <title>Sign Up</title>
   <meta name="description" content="Sign up to create an account and enjoy our exclusive services. Quick and easy registration process for everyone.">
   <meta name="keywords" content="sign up, create account, registration, user login, account creation">
-  <meta name="Ikram" content="Ikram lechqer">
-
-
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <form action="/submit-signup" method="POST">
-    <h1>Create an Account</h1>
-    <label for="UserName">Username</label>
-    <input type="text" name="UserName" id="UserName" placeholder="Enter your username" required>
+  <form action="/submit-signup" method="POST" class="signup-form">
+      <h1>Create an Account</h1>
+      <div class="container">
+      <label for="UserName">Username</label>
+      <input type="text" name="UserName" id="UserName" placeholder="Enter your username" required>
 
-    <label for="Name">First Name</label>
-    <input type="text" name="Name" id="Name" placeholder="Enter your first name" required>
+      <!-- name filds -->
 
-    <label for="Surname">Last Name</label>
-    <input type="text" name="Surname" id="Surname" placeholder="Enter your last name" required>
-
-    <label for="Email">Email</label>
-    <input type="email" name="Email" id="Email" placeholder="Enter your email" required>
-
-    <label for="Password">Password</label>
-    <input type="password" name="Password" id="Password" placeholder="Enter your password" required>
-
-    <label for="ConfirmPassword">Confirm Password</label>
-    <input type="password" name="ConfirmPassword" id="ConfirmPassword" placeholder="Re-enter your password" required>
-
-    <button type="submit">Create Account</button>
-
-    <p class="alternate-option">Or sign up with</p>
-    <div class="social-login">
-        <a href="">
-        <img src="icons8-google-48.png" alt="Sign up with Google">
-        Google
-        </a>
-      <a href="">
-        <img src="icons8-apple-48.png" alt="Sign up with Apple">
-        Apple  
-    </a>
+      <div class="name-fields">
+        <div>
+            <label for="Name">First Name</label>
+            <input type="text" name="Name" id="Name" placeholder="Enter your first name" required>
+        </div>
+        <div>
+            <label for="Surname">Last Name</label>
+            <input type="text" name="Surname" id="Surname" placeholder="Enter your last name" required>
+        </div>
     </div>
 
-    <p class="alternate-option">
-      Already have an account? <a href="/signin">Sign In</a>
-    </p>
+      <label for="Email">Email</label>
+      <input type="email" name="Email" id="Email" placeholder="Enter your email" required>
+
+      <!-- password fields -->
+
+      <div class="Password-fields">
+        <div>
+          <label for="Password">Password</label>
+          <input type="password" name="Password" id="Password" placeholder="Enter your password" required>
+        </div>
+        <div>
+          <label for="ConfirmPassword">Confirm Password</label>
+          <input type="password" name="ConfirmPassword" id="ConfirmPassword" placeholder="Re-enter your password" required>
+        </div>
+    </div>
+
+      <button type="submit">Create Account</button>
+
+      <div class="icons">
+          <a href="">
+              <img src="icons8-google-48.png" alt="Sign up with Google">
+              Google
+          </a>
+          <a href="">
+              <img src="icons8-apple-48.png" alt="Sign up with Apple">
+              Apple
+          </a>
+      </div>
+
+      <p class="other-options">
+          Already have an account? <a href="/signin">Sign In</a>
+      </p>
+    </div>
   </form>
 </body>
 </html>
